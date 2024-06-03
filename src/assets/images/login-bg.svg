@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="900px" viewBox="0 0 1440 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg</title>
+    <defs>
+        <linearGradient x1="45.7766712%" y1="3.4534157%" x2="45.7766752%" y2="95.1507465%" id="linearGradient-1">
+            <stop stop-color="#4D3AF9" offset="0%"></stop>
+            <stop stop-color="#3B4DFE" offset="45.7172217%"></stop>
+            <stop stop-color="#1A68FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1440" height="900"></rect>
+        <linearGradient x1="50%" y1="2.53507653%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#4581FF" offset="0%"></stop>
+            <stop stop-color="#1C57FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.53507653%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#4581FF" offset="0%"></stop>
+            <stop stop-color="#1C57FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.53507653%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#4581FF" offset="0%"></stop>
+            <stop stop-color="#1C57FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.53507653%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#4581FF" offset="0%"></stop>
+            <stop stop-color="#1C57FE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg">
+            <g id="Oval-+-Oval-Copy-2-+-Group-2-Copy-+-Oval-Copy-+-Group-Mask">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <circle id="Oval" fill="url(#linearGradient-4)" mask="url(#mask-3)" cx="89.1666667" cy="450" r="37.5"></circle>
+                <circle id="Oval-Copy-2" fill="url(#linearGradient-4)" opacity="0.691519475" mask="url(#mask-3)" cx="1080" cy="27.5" r="30.8333333"></circle>
+                <g id="Group-2-Copy" opacity="0.54761096" mask="url(#mask-3)">
+                    <g transform="translate(-64.1667, 547.5)">
+                        <polygon id="Rectangle-2" fill="#5088FF" transform="translate(49.8405, 50.1608) rotate(-45) translate(-49.8405, -50.1608)" points="14.6376941 15.2843151 61.8582986 38.2544249 85.0433693 85.0372224 22.8047379 77.1693309"></polygon>
+                        <polygon id="Rectangle-3-Copy" fill="url(#linearGradient-5)" points="48.4848485 71.8759515 100 50.2041943 100 452.5 48.4848485 452.5"></polygon>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1407.5, 590)">
+                <polygon id="Rectangle-2" fill="#3F89FB" transform="translate(33.1896, 33.161) rotate(-45) translate(-33.1896, -33.161)" points="9.72099517 9.97807018 42.6183123 23.8469907 56.6581119 56.3439128 15.165691 51.1140029"></polygon>
+                <polygon id="Rectangle-3" fill="url(#linearGradient-6)" points="0 34.3008283 35.3166986 49.7698029 34.3434343 335.046442 0 322.081858"></polygon>
+                <polygon id="Rectangle-3-Copy" fill="url(#linearGradient-7)" points="32.3232323 48.7063825 66.6666667 34.3008283 66.6666667 323.463439 32.3232323 335.046442"></polygon>
+            </g>
+            <circle id="Oval-Copy" fill="url(#linearGradient-4)" opacity="0.819312686" cx="1460.16667" cy="472.666667" r="51.5"></circle>
+        </g>
+    </g>
+</svg>
