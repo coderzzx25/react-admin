@@ -72,3 +72,21 @@ export interface IAddRoleField {
   menuIds: string[];
   status: boolean;
 }
+
+export interface IMenuDataInfo {
+  id: string;
+  menuName: string;
+  url: string;
+  icon: string;
+  grade: number;
+  pid: number;
+  createTime: string;
+  updateTime: string;
+  status: number;
+  children?: IMenuDataInfo[];
+}
+
+export interface IMenuDataList {
+  total: number;
+  list: IMenuDataInfo[];
+}

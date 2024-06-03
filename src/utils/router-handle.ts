@@ -32,7 +32,7 @@ export const getMenuPath = (list: IRoleMenusResult[]): string[] => {
 };
 
 const customIcons: { [key: string]: any } = Icons;
-const getIcon = (icon: string) => {
+export const getIcon = (icon: string) => {
   return createElement(customIcons[icon]);
 };
 
