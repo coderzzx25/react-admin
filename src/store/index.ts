@@ -3,11 +3,13 @@ import { useSelector, TypedUseSelectorHook, useDispatch, shallowEqual } from 're
 
 import mainReducer from './modules/main';
 import userReducer from './modules/user';
+import menuReducer from './modules/menus';
 
 const store = configureStore({
   reducer: {
     main: mainReducer,
-    user: userReducer
+    user: userReducer,
+    menu: menuReducer
   }
 });
 

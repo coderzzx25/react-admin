@@ -1,24 +1,17 @@
 import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import type { IRoleMenusResult, IUserInfo, IUserLoginResult } from '@/types';
+import type { IUserInfo, IUserLoginResult } from '@/types';
 import { getRoleMenuList } from '@/service/modules/menus';
-import { refreshToken } from '@/service/modules/auth';
 import { localCache, sessionCache } from '@/utils/cache';
 
 interface IUserState {
   userInfo: IUserInfo | null;
   token: string;
   refreshToken: string;
-  userMenus: IRoleMenusResult[] | [];
 }
 
 export const fetchUserMenus = createAsyncThunk('user/fetchUserMenus', async () => {
   const menus = await getRoleMenuList();
   return menus;
-});
-
-export const fetchRefreshToken = createAsyncThunk('user/fetchRefreshToken', async () => {
-  const result = await refreshToken();
-  return result;
 });
 
 const userSlice = createSlice({
@@ -38,16 +31,6 @@ const userSlice = createSlice({
       localCache.setCache('refreshToken', payload.refreshToken);
       localCache.setCache('userInfo', JSON.stringify(payload.userinfo));
     }
-  },
-  extraReducers: (builder) => {
-    builder.addCase(fetchUserMenus.fulfilled, (state, { payload }) => {
-      state.userMenus = payload;
-      sessionCache.setCache('userMenus', JSON.stringify(payload));
-    });
-    builder.addCase(fetchRefreshToken.fulfilled, (state, { payload }) => {
-      state.token = payload.token;
-      state.refreshToken = payload.refreshToken;
-    });
   }
 });
 

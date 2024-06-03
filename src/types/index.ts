@@ -30,7 +30,6 @@ export interface IRoleMenusResult {
   menuName: string;
   url: string;
   icon: string;
-  permission?: IPermissionInfo[];
   children?: IRoleMenusResult[];
 }
 

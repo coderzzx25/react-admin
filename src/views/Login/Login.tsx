@@ -50,7 +50,7 @@ const Login: FC<IProps> = () => {
     // 保存用户信息
     dispatch(setUserLoginInfoReducer(loginResult));
     // 跳转到首页
-    navigate('/welcome');
+    navigate('/');
   };
   return (
     <LoginWrapper>

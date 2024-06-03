@@ -3,16 +3,13 @@ import { BASE_URL, TIME_OUT } from './config';
 import Request from './request';
 import { hideLoading, showLoading } from '@/components/Loading';
 import store from '@/store';
-import { fetchRefreshToken } from '@/store/modules/user';
-
-let refreshToken: boolean = false;
 
 const request = new Request({
   baseURL: BASE_URL,
   timeout: TIME_OUT,
   interceptors: {
     requestSuccessFn: (config) => {
-      const token = refreshToken ? store.getState().user.refreshToken : store.getState().user.token;
+      const token = store.getState().user.token;
       if (token) {
         config.headers.Authorization = `Bearer ${token}`;
       }
@@ -28,12 +25,6 @@ const request = new Request({
       return response.data;
     },
     responseFailureFn: (error) => {
-      if (error.response?.status === 401 && !refreshToken) {
-        refreshToken = true;
-        store.dispatch(fetchRefreshToken()).then(() => {
-          refreshToken = false;
-        });
-      }
       hideLoading();
       message.error(error.response?.data as string);
     }

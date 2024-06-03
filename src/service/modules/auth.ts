@@ -8,9 +8,3 @@ export const userLogin = (data: IUserLoginInfo) => {
     data
   });
 };
-
-export const refreshToken = () => {
-  return request.get({
-    url: '/auth/refresh_token'
-  });
-};
